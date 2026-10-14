@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/CodingAssignment2Base",
+    "cmake.buildDirectory": "${workspaceFolder}/CodingAssignment2Base/build",
+    "cmake.cmakePath": "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

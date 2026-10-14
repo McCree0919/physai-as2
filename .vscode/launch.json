@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run OpenGL project",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/CodingAssignment2Base/build/Debug/cs6983_opengl_intro.exe",
+            "cwd": "${workspaceFolder}/CodingAssignment2Base",
+            "preLaunchTask": "CMake: build project",
+            "console": "integratedTerminal"
+        }
+    ]
+}

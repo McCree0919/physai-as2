@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake: configure project",
+            "type": "process",
+            "command": "${config:cmake.cmakePath}",
+            "args": ["-S", "${workspaceFolder}/CodingAssignment2Base", "-B", "${workspaceFolder}/CodingAssignment2Base/build", "-G", "Visual Studio 18 2026", "-A", "x64"],
+            "problemMatcher": []
+        },
+        {
+            "label": "CMake: build project",
+            "type": "process",
+            "command": "${config:cmake.cmakePath}",
+            "args": ["--build", "${workspaceFolder}/CodingAssignment2Base/build", "--config", "Debug", "--parallel"],
+            "dependsOn": "CMake: configure project",
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
