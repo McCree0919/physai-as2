@@ -1,0 +1,4 @@
+
+# Reflection
+
+The most difficult part was loading the shader files because Windows had trouble reading the Chinese characters in my OneDrive folder path. I fixed this by moving the project to `C:\dev`, deleting the old build folder, and rebuilding it with CMake. My biggest takeaway was learning that OBJ files store vertex positions and normals separately, so my `load_obj` function had to combine them into six floats for each vertex. The vertex shader uses `uModel` and `uViewProj` to transform vertex positions into clip space and `uNormalMatrix` to transform normals. The fragment shader normalizes the interpolated normals and uses the Blinn-Phong model to calculate ambient, diffuse, and specular lighting. This project connects to Physical AI because a robot arm needs a 3D model and joints before an AI agent can control its movements in a simulated environment.
